@@ -22,32 +22,11 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-
-
-
-- name: Dependency Check
-  # You may pin to the exact commit or the version.
-  # uses: dependency-check/Dependency-Check_Action@75ba02d6183445fe0761d26e836bde58b1560600
-  uses: dependency-check/Dependency-Check_Action@1.1.0
-  with:
-    # 
-    project: 
-    # 
-    path: 
-    # 
-    format: 
-    # 
-    others: # optional
-          
-
-
-
-
- name: Copia de Jar a Raiz de proyecto
-        run: |
-          cp $GITHUB_WORKSPACE/build/libs/spring-petclinic-2.6.0.jar .
-          chmod 777 spring-petclinic-2.6.0.jar
-          ls -ltra
+ #name: Copia de Jar a Raiz de proyecto
+  #      run: |
+   #       cp $GITHUB_WORKSPACE/build/libs/spring-petclinic-2.6.0.jar .
+    #      chmod 777 spring-petclinic-2.6.0.jar
+     #     ls -ltra
 
     
   depchecktest:
