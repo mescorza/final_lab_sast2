@@ -24,7 +24,7 @@ jobs:
       with:
         project: 'final_lab_sast2' 
         path: '.'
-        format: 'html'
+        
         
     - name: Upload Test results
       uses: actions/upload-artifact@master
