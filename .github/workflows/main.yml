@@ -24,7 +24,7 @@ jobs:
       with:
         project: 'final_lab_sast2' 
         path: '.'
-        format: 'ALL'
+        format: 'HTML'
         
         
     - name: Upload Test results
